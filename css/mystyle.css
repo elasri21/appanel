@@ -58,24 +58,30 @@ body {
         top: 8px;
         right: 100px;
         display: none; }
-      #page #info .form-container #form button {
+      #page #info .form-container #form .button {
         outline: none;
         border: none;
-        padding: 10px 30px;
+        width: 60px;
+        height: 42px;
         border-radius: 30px;
         position: absolute;
         top: -1px;
         right: 0;
         cursor: pointer;
         background: linear-gradient(135deg, #debaba, #ee8c8c); }
-      #page #info .form-container #form button:hover {
+      #page #info .form-container #form .button:hover {
         box-shadow: 6px 0.5em 0.5em #debaba; }
+      #page #info .form-container #form .arrow {
+        position: absolute;
+        top: 10px;
+        right: 19px;
+        z-index: 11; }
   #page #image {
     width: 50%;
     padding: 40px 50px; }
     #page #image img {
       width: 100%;
-      object-fit: cover; }
+      padding: 40px 50px; }
 
 @media screen and (max-width: 900px) {
   #page #info {
