@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  height: 100vh;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#page {
+  background-image: url("../images/bg-pattern-desktop.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  #page {
+    height: calc(100% - 40px) !important;
+  }
+  #page #info {
+    width: 50% !important;
+  }
+  #page #info .mobile-img {
+    display: none !important;
+  }
+  #page #image {
+    display: block !important;
+    width: 50% !important;
+    height: 100%;
+  }
+  #page #image img {
+    height: 100%;
+  }
+}
+#page #info {
+  width: 100%;
+  padding: 40px 50px;
+}
+#page #info .logo {
+  margin-bottom: 100px;
+}
+#page #info .mobile-img {
+  width: 100%;
+  margin-bottom: 40px;
+}
+#page #info .mobile-img img {
+  width: 100%;
+}
+#page #info .title {
+  margin-bottom: 15px;
+}
+#page #info .title h1 {
+  font-size: 3em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+#page #info .title h1 span {
+  font-weight: 300;
+  color: #ce9797;
+}
+#page #info .disc {
+  margin-bottom: 20px;
+}
+#page #info .disc p {
+  font-size: 0.8em;
+  font-weight: 400;
+  color: #ce9797;
+  line-height: 20px;
+}
+#page #info .form-container #form {
+  position: relative;
+}
+#page #info .form-container #form #email {
+  width: 100%;
+  border: 0.5px solid #413a3a;
+  outline: none;
+  border-radius: 30px;
+  padding: 12px;
+  color: black;
+}
+#page #info .form-container #form .error {
+  position: absolute;
+  top: 8px;
+  right: 100px;
+  display: none;
+}
+#page #info .form-container #form .button {
+  outline: none;
+  border: none;
+  width: 60px;
+  height: 42px;
+  border-radius: 30px;
+  position: absolute;
+  top: -1px;
+  right: 0;
+  cursor: pointer;
+  background: linear-gradient(135deg, #debaba, #ee8c8c);
+}
+#page #info .form-container #form .button:hover {
+  box-shadow: 6px 0.5em 0.5em #debaba;
+}
+#page #info .form-container #form .arrow {
+  position: absolute;
+  top: 10px;
+  right: 19px;
+  z-index: 11;
+}
+#page #image {
+  display: none;
+}
+#page #image img {
+  display: block;
+  max-width: 100%;
+  margin-left: auto;
+}
+
+.msg-error {
+  font-size: 0.8em;
+  color: #ee8c8c;
+  font-weight: 400;
+  margin-left: 15px;
+  margin-top: 10px;
+  display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=main.css.map */
